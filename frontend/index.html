@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phụ Kiện Máy Tính</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Phụ Kiện Máy Tính</h1>
+        <p>Chào mừng bạn đến với cửa hàng của chúng tôi!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#cart">Giỏ hàng</a>
+        <a href="#login">Đăng nhập</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Sản phẩm nổi bật</h2>
+            <p>Khám phá các phụ kiện máy tính phù hợp với bạn.</p>
+        </section>
+
+        <section id="products">
+            <h2>Danh sách sản phẩm</h2>
+
+            <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <select id="category-filter">
+                <option value="all">Tất cả sản phẩm</option>
+                <option value="1">Chuột</option>
+                <option value="2">Bàn phím</option>
+                <option value="3">Tai nghe</option>
+                <option value="4">USB</option>
+            </select>
+
+            <div id="product-list"></div>
+            <div id="product-detail"></div>
+        </section>
+
+        <section id="cart">
+            <h2>Giỏ hàng</h2>
+            <p>Giỏ hàng của bạn đang trống.</p>
+        </section>
+
+        <section id="login">
+            <h2>Đăng ký tài khoản</h2>
+
+            <form id="register-form">
+                <input type="text" id="full-name" placeholder="Họ và tên" required>
+
+                <input type="email" id="email" placeholder="Email" required>
+
+                <input type="password" id="password" placeholder="Mật khẩu" required>
+
+                <input type="text" id="phone" placeholder="Số điện thoại">
+
+                <input type="text" id="address" placeholder="Địa chỉ">
+
+                <button type="submit">Đăng ký</button>
+            </form>
+
+            <p id="register-message"></p>
+            <h2>Đăng nhập</h2>
+
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+
+                <input type="password" id="login-password" placeholder="Mật khẩu" required>
+
+                <button type="submit">Đăng nhập</button>
+            </form>
+
+            <p id="login-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Website bán phụ kiện máy tính</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
